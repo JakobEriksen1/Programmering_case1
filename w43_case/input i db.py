@@ -9,7 +9,8 @@ calories = int(input("Skriv skriv burgerns kalorier: "))
 
 
 cur.execute(
-    "INSERT INTO burgers VALUES (?,?,?)",
+    "INSERT INTO burgers (NAME, PRICE, CALORIES) VALUES (?,?,?)",
+    (name, price, calories)
 
 )
 
